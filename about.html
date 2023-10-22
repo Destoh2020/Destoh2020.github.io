@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/32dfd0dffd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Desterian Ragira</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navigation-container">
+        <!-- START OF NAVIGATION BAR -->
+        <nav class="navbar">
+          <div class="logo"><a href="home.html">DESTERIAN RAGIRA</a></div>
+          <!-- <div class="menu-icon" onclick="toggleMenu()" id="icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+          </div> -->
+          <button class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+          </button>
+
+          <div class="nav-links" id="menu">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- END OF NAVIGATION BAR -->
+      </div>
+      <div class="about-section">
+        <!-- START OF ABOUT SECTION -->
+        <h2>ABOUT ME</h2>
+        <p>
+          Hello my name is Desterian Ragira a web developer located in Kenya.
+          I'm very passionate and dedicated to my work. As a self taught web
+          developer, I have acquired the skills and knowledge necessary to make
+          your project a success. I enjoy every step of programming process.
+          <br />
+          <br />
+          Here are the technologies I have skills on and have been working with
+          recently:
+        </p>
+        <ul>
+          <li>Javascript</li>
+          <li>React Js</li>
+          <li>Node Js</li>
+          <li>Typescript</li>
+          <li>Python (Flask)</li>
+          <li>MariaDB</li>
+        </ul>
+        <div class="cv">
+          <p>Click here to download my cv;</p>
+          <br />
+          <a
+            class="download"
+            href="./assets/CV-DESTERIAN_RAGIRA.pdf"
+            download="CV"
+          >
+            <i class="fa-solid fa-download"></i>
+            Download
+          </a>
+        </div>
+        <!-- END OF ABOUT SECTION -->
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("menu");
+      function toggleMenu() {
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>

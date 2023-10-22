@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/32dfd0dffd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Desterian Ragira</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navigation-container">
+        <!-- START OF NAVIGATION BAR -->
+        <nav class="navbar">
+          <div class="logo"><a href="home.html">DESTERIAN RAGIRA</a></div>
+          <!-- <div class="menu-icon" onclick="toggleMenu()" id="icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+          </div> -->
+          <button class="menu-icon" onclick="toggleMenu()" id="icon">
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+          </button>
+
+          <div class="nav-links" id="menu">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- END OF NAVIGATION BAR -->
+      </div>
+      <div class="contact-section">
+        <!-- START OF CONTACT SECTION -->
+        <h2>CONTACT ME</h2>
+        <p>
+          I am interested in freelancing jobs for large and small projects.
+          However if you have other resquests dont hesitate to use the form.
+        </p>
+        <div class="card-container">
+          <div class="card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">Email</div>
+            <div class="contact-link">desterianragira@gmail.com</div>
+          </div>
+          <div class="card">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-text">Github</div>
+            <div class="contact-link">
+              <a href="https://github.com/Destoh2020/">
+                <img src="#" alt="Github" /><i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text">Phone</div>
+            <div class="contact-link">+254 724 444 975</div>
+          </div>
+        </div>
+        <!-- END OF CONTACT SECTION -->
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("menu");
+      function toggleMenu() {
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>
